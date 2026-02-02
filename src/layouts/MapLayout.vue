@@ -92,6 +92,8 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <MainFooter />
   </q-layout>
 </template>
 
@@ -101,6 +103,7 @@ import { ref, watch } from 'vue'
 import InfoTab from 'src/components/SideBar/InfoTab.vue'
 import { selectedFeatures } from 'src/controllers/mapDataController'
 import MainHeader from 'src/components/MainHeader.vue'
+import MainFooter from 'src/components/MainFooter.vue'
 const leftDrawerOpen = ref(false)
 
 const miniState = ref(true)

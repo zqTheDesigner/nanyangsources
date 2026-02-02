@@ -43163,7 +43163,7 @@
         "X": 103.8400788981,
         "Y": 1.279109534
     },
-        {
+    {
         "NUMBER": 10650,
         "NAME": "CHOP SIAM WHATT",
         "CH-NAME": "森發號",
@@ -43180,6 +43180,10 @@
         "STREET": "Teochow Street",
         "X": 103.845744249742,
         "Y": 1.28849714433354,
-        "detail":"<a href='images/chop_siam_whatt/1.JPG' target='_blank'>1.JPG</a><br><a href='images/chop_siam_whatt/2.JPG' target='_blank'>2.JPG</a><br><a href='images/chop_siam_whatt/3.JPG' target='_blank'>3.JPG</a>"
+        "Gallery": [
+            "images/chop_siam_whatt/1.JPG",
+            "images/chop_siam_whatt/2.JPG",
+            "images/chop_siam_whatt/3.JPG"
+        ]
     }
 ]

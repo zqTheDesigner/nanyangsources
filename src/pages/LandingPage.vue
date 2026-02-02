@@ -1,7 +1,13 @@
 <template>
   <q-page class="flex items-center column">
+    <HeaderBanner
+      :subtitle="content.subtitle"
+      :title="content.title"
+      link="/map"
+      :bg-image="content.bgImage"
+    />
     <div class="fit" style="max-width: 1400px">
-      <q-img :src="content.bgImage" style="max-height: 460px">
+      <!-- <q-img :src="content.bgImage" style="max-height: 460px">
         <div class="fit flex items-center justify-center column">
           <div>
             <h3 class="text-center gt-sm">{{ content.title }}</h3>
@@ -18,7 +24,7 @@
             <q-btn to="/map" label="Visit Map" outline />
           </div>
         </div>
-      </q-img>
+      </q-img> -->
     </div>
 
     <div style="max-width: 800px" class="q-mx-auto q-px-md q-my-lg">
@@ -29,5 +35,6 @@
 
 <script setup lang="ts">
 import { content as pageContent } from '../controllers/contentController'
+import HeaderBanner from 'src/components/HeaderBanner.vue'
 const content = pageContent.about
 </script>

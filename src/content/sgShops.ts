@@ -16,19 +16,19 @@ const content = {
   about: {
     title: 'Singapore Historical Business Database',
     subtitle: '',
-    bgImage: '/images/markus-leo-g5YqLybBtmA-unsplash.jpg',
+    bgImage: '/images/Accreation.jpg',
     content: `Singapore Historical Business Database is a website that reconstructs the spatial evolution of Singapore’s urban landscape by mapping locations of companies across different historical eras, thereby giving us a glimpse of the city state’s transformation into a global commercial hub that it is today.\n\n<img src='/images/map image.png' style='max-width:800px;width:100%'>Tapping on a comprehensive 1949 business directory, our team is building an extensive database of Singapore’s businesses to analyse the city’s economic and social structures during the colonial era. The 1949 Business Name Registration Directory is a treasure trove of information that contains more than 14,000 business names and 30,000 proprietors, and allows us to study how some businesses have evolved to keep up with the times and how others have vanished as.\n\nWe begin our exploration along the bustling banks of Boat Quay by using GIS technology to dot the locations of a myriad of companies around the vicinity. The diversity of businesses ranging from shipping companies to sundries shops in the downtown area – known colloquially in Hokkien as po dei (坡底) – is testament to Singapore’s role as a regional entrepot with trade crisscrossing the East and the West since the early 1800s.\n\nThis first phase of our project was funded by the National Heritage Board’s Heritage Research Grant (HRG059) and we have plans to expand our research in two main areas: (1) enriching existing entries with primary sources related to each business; (2) developing new GIS layers representing the 19th and early 20th centuries based on newly collected historical materials.`,
   },
   landingPage: {
     title: 'Singapore Historical Business Database',
     subtitle: '',
-    bgImage: '/images/markus-leo-g5YqLybBtmA-unsplash.jpg',
+    bgImage: '/images/Accreation.jpg',
     content: ``,
   },
   dataPage: {
     title: 'Data',
-    subtitle: 'Subtitle About Data',
-    bgImage: '/images/markus-leo-g5YqLybBtmA-unsplash.jpg',
+    subtitle: '',
+    bgImage: '/images/Mewrankan.jpg',
     content: '',
     data: [
       { title: 'Boat Quay', link: 'csv/Boat Quay.csv' },
@@ -39,7 +39,7 @@ const content = {
   peoplePage: {
     title: 'People',
     subtitle: '',
-    bgImage: '/images/as8.jpeg',
+    bgImage: '/images/Singaria.jpg',
     content: '',
     people: [
       {
@@ -77,7 +77,7 @@ const content = {
   contentPage: {
     title: 'Paper',
     subtitle: '',
-    bgImage: '/images/library.jpg',
+    bgImage: '/images/Openblossom.jpg',
     content: '',
     listOfContent: [
       {
@@ -98,12 +98,12 @@ const content = {
   acknowledgementPage: {
     title: 'Acknowledgement',
     subtitle: '',
-    bgImage: '/images/nus.png',
+    bgImage: '/images/Mewrankan.jpg',
     content: '',
     shops: [
       {
         name: 'Eng Diang Huat 翁展发 ',
-        image: '',
+        image: 'images/eng_diang_huat/eng_diang_huat_1.jpg',
       },
       {
         name: ' Pek Sin Choon 白新春',

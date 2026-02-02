@@ -1,6 +1,12 @@
 <template>
   <q-page class="flex items-center column">
-    <div class="fit" style="max-width: 1400px">
+<HeaderBanner
+      :subtitle="content.subtitle"
+      :title="content.title"
+      :bg-image="content.bgImage"
+    />
+
+    <!-- <div class="fit" style="max-width: 1400px">
       <q-img :src="content.bgImage" style="max-height: 450px">
         <div class="fit flex items-center justify-center column">
           <div>
@@ -16,7 +22,7 @@
           </div>
         </div>
       </q-img>
-    </div>
+    </div> -->
 
     <div style="max-width: 1200px" class="q-mx-auto q-px-md q-my-lg">
       <q-markdown no-heading-anchor-links> {{ content.content }}</q-markdown>
@@ -64,6 +70,7 @@
 
 <script setup lang="ts">
 import { content as pageContent } from "src/content/sgShops"
+import HeaderBanner from "src/components/HeaderBanner.vue";
 
 const content = pageContent.acknowledgementPage
 </script>

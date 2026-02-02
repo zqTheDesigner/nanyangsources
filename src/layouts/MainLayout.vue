@@ -13,9 +13,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer class="bg-cyan-10 q-pa-sm text-center">
-      <div>© {{ currentYear }}. All rights reserved.</div>
-    </q-footer>
+<MainFooter />
   </q-layout>
 </template>
 
@@ -24,9 +22,10 @@ import { ref, watch } from 'vue'
 
 import { selectedFeatures } from 'src/controllers/mapDataController'
 import MainHeader from 'src/components/MainHeader.vue'
+import MainFooter from 'src/components/MainFooter.vue'
 const miniState = ref(true)
 
-const currentYear = new Date().getFullYear()
+
 
 const navContent = ref(false)
 

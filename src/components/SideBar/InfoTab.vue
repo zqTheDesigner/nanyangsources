@@ -5,16 +5,7 @@
   <!-- For locations with only 1 data point -->
   <div v-if="listData.length == 1">
     <h5>{{ listData[0] ? listData[0].NAME || listData[0]['Address'] : '' }}</h5>
-    <ul class="props">
-      <li v-for="(value, key) in listData[0]" :key="key">
-        <div>
-          <span class="label"
-            ><b>{{ key }}:</b>
-          </span>
-          <span class="value"> {{value}} </span>
-        </div>
-      </li>
-    </ul>
+    <InfoTabList :feature="listData[0]" />
   </div>
 
   <!-- For locations with multiple data point -->
@@ -47,19 +38,7 @@
         :label="feature.NAME || feature.siteNameEn || feature.Name"
         :caption="feature.COMPANY"
       >
-        <ul class="props">
-          <li v-for="(value, key) in feature" :key="key">
-            <div v-if="key !== 'geometry'">
-              <span class="label"
-                ><b>{{ key }}:</b></span
-              >
-              <span class="value"
-                ><q-markdown v-if="key == 'detail'">{{ value }}</q-markdown>
-                <span v-else>{{ value }}</span></span
-              >
-            </div>
-          </li>
-        </ul>
+        <InfoTabList :feature="feature" />
       </q-expansion-item>
     </q-list>
 
@@ -93,6 +72,7 @@
 <script setup lang="ts">
 import { selectedFeatures } from '../../controllers/mapDataController'
 import { computed, ref, watch } from 'vue'
+import InfoTabList from './InfoTabList.vue'
 
 const listDataCount = ref(10)
 
