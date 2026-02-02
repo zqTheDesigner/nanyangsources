@@ -11,7 +11,7 @@ const content = {
     { label: 'Map', link: 'map' },
     { label: 'Data', link: 'data' },
     { label: 'Papers', link: 'content' },
-    { label: 'Acknowledgements', link: 'acknowledgement' },
+    { label: 'Acknowledgements', link: 'acknowledgements' },
   ],
   about: {
     title: 'Singapore Historical Business Database',
@@ -75,7 +75,7 @@ const content = {
     ],
   },
   contentPage: {
-    title: 'Paper',
+    title: 'Papers',
     subtitle: '',
     bgImage: '/images/Openblossom.jpg',
     content: '',
@@ -96,7 +96,7 @@ const content = {
     ],
   },
   acknowledgementPage: {
-    title: 'Acknowledgement',
+    title: 'Acknowledgements',
     subtitle: '',
     bgImage: '/images/Mewrankan.jpg',
     content: '',

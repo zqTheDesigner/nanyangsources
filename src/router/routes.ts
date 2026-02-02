@@ -43,9 +43,9 @@ const routes: RouteRecordRaw[] = [
   },
 
   {
-    path: '/acknowledgement',
+    path: '/acknowledgements',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/AcknowledgementPage.vue') }],
+    children: [{ path: '', component: () => import('pages/AcknowledgementsPage.vue') }],
   },
 
   // Always leave this as last one,
